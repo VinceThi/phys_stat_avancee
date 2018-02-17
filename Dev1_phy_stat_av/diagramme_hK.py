@@ -13,6 +13,7 @@ def h_prime(h, k):
 def k_prime(h, k):
     return (1/4)*(np.log(np.cosh(2*k+h))+np.log(np.cosh(-2*k+h)) - np.log((np.cosh(h)*np.cosh(h))))
 
+# J'essaie une modification avec Github
 
 if __name__ == '__main__':
 
