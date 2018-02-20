@@ -19,10 +19,10 @@ if __name__ == '__main__':
 
     hlist = np.arange(0, 2.5, 0.5)
     #hlist = [0, 100]
-    hlist = [1]
+    #hlist = [1]
     k_init = 0.01
 
-
+    plt.rc('text', usetex=True)
     for h in hlist:
         i = 0
         kprim = 0.01
@@ -49,8 +49,7 @@ if __name__ == '__main__':
         plt.plot(karr, garr, label='$h = '+str(h) + '$')
     plt.xlim([0,5])
     plt.ylim([0, 5])
-    plt.legend(loc=0)
+    plt.legend(loc=0, fontsize=15)
     plt.xlabel('$K$', fontsize=20)
     plt.ylabel('$g(K, h)$', fontsize=20)
     plt.show()
-
